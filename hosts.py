@@ -35,12 +35,12 @@ class ExampleInventory(object):
     # Example inventory for testing.
     def example_inventory(self):
         return {
-            'lwgroup': {
+            'cossinventery': {
                 'hosts': ['192.168.28.71', '192.168.28.72'],
                 'vars': {
-                    'ansible_ssh_user': 'vagrant',
+                    'ansible_ssh_user': 'user1',
                     'ansible_ssh_private_key_file':
-                        '~/.vagrant.d/insecure_private_key',
+                        '~/.ssh/id_rsa',
                     'example_variable': 'value'
                 }
             },
